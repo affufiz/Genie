@@ -641,8 +641,8 @@ a:focus {
   /* Fix big empty space under carousel dots */
   .owl-dots,
   .swiper-pagination {
-    margin-top: -10px !important;
-    bottom: 20px !important;
+  margin-bottom: 20px;
+    height: 50px;
   }
 
   /* Fix scroll-to-top button pushing layout */
@@ -661,5 +661,50 @@ a:focus {
   /* Auto-close navbar after clicking a link */
   .offcanvas a.nav-link {
     padding: 12px 0 !important;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+body, html {
+  overflow-x: hidden;
+}
+.section {
+  padding: 40px 20px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  h1, h2, h3, p {
+    text-align: center;
+  }
+}
+.navbar-toggler {
+  position: relative;
+  left: -10px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
   }
 }
