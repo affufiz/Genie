@@ -568,9 +568,7 @@ a:focus {
 }
 
 
-.offcanvas {
-  max-width: 100vw !important;
-}
+
 #loader-wrapper {
   position: fixed;
   top: 0;
@@ -590,3 +588,78 @@ a:focus {
   transition: opacity 0.5s ease;
 }
 
+/* ==========================================
+      GLOBAL MOBILE FIX — REMOVE WHITE GAPS
+========================================== */
+@media (max-width: 768px) {
+
+  /* Kill fixed heights causing giant gaps */
+  section,
+  .section,
+  .image-section,
+  .bg-section {
+    height: auto !important;
+    min-height: auto !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Fix ANY extra top margin after hero */
+  .hero,
+  .hero-carousel,
+  .hero-carousel .item {
+    margin-bottom: 0 !important;
+  }
+
+  /* Prevent background from zooming like crazy */
+  .image-section,
+  .bg-section {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+  }
+
+  /* Fix columns overflowing */
+  .row,
+  .columns {
+    flex-direction: column !important;
+  }
+
+  .col {
+    width: 100% !important;
+    margin-bottom: 25px !important;
+  }
+
+  /* Fix process section overflowing left/right */
+  .process-block .process-step .dot-border:after {
+    width: 200px !important;
+    letter-spacing: 5px !important;
+  }
+
+  /* Fix big empty space under carousel dots */
+  .owl-dots,
+  .swiper-pagination {
+    margin-top: -10px !important;
+    bottom: 20px !important;
+  }
+
+  /* Fix scroll-to-top button pushing layout */
+  #scrollToTopBtn {
+    bottom: 20px !important;
+    right: 20px !important;
+    transform: scale(0.8);
+  }
+
+  /* Fix navbar toggle icon being misaligned */
+  .navbar-toggler {
+    position: relative;
+    left: 10px;
+  }
+
+  /* Auto-close navbar after clicking a link */
+  .offcanvas a.nav-link {
+    padding: 12px 0 !important;
+  }
+}
