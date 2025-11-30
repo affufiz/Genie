@@ -228,10 +228,10 @@
   box-shadow: none !important; /* removes Bootstrap focus glow */
 }
 /* Move toggler on mobile */
-@media (max-width: 428.98px) {
+/* @media (max-width: 428.98px) {
   .navbar .navbar-toggler {
     position: relative;
-    right: 29%;      /* adjust vertically if needed */
-    z-index: 999999; /* keep on top */
+    right: 29%;
+    z-index: 999999; 
   }
-}
+} */

@@ -79,10 +79,11 @@ function animateCustomCounter(el, sequence, delay = 100) {
 function onPageLoadReady() {
   const elapsedTime = Date.now() - window.pageLoadStart;
   const remainingTime = Math.max(2000 - elapsedTime, 0);
-  setTimeout(() => {
-    loader.classList.add("fade-out");
-    setTimeout(() => loader.remove(), 500);
-  }, remainingTime);
+ setTimeout(() => {
+  loader.classList.add("fade-out");
+  setTimeout(() => loader.style.display = "none", 500);
+}, remainingTime);
+
 }
 
 window.pageLoadStart = Date.now();

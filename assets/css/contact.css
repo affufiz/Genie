@@ -178,6 +178,7 @@
 @media (max-width: 576px) {
   .social-icons {
     gap: 15px;
+    margin-bottom: 46px;
   }
   .social-icon {
     width: 45px;

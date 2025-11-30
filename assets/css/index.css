@@ -147,29 +147,29 @@
   text-align: center;
   transition: background-image 1.2s ease-in-out;
 }
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .hero-carousel .item {
-    background-size: contain; /* stops extreme zoom */
+    background-size: contain; 
     background-position: top center;
     background-repeat: no-repeat;
-    height: 75vh; /* better framing on tall screens */
+    height: 75vh; 
   }
 }
 @media (max-width: 576px) {
   .hero-carousel .item::before {
     background: rgba(0,0,0,0.65);
   }
-}
+} */
 .hero-carousel .item {
     padding-top: 80px;  /* height of navbar */
 }
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .hero-carousel .item {
     background-size: cover;
     background-position: top center;
     height: 75vh;
   }
-}
+} */
 .hero-carousel .overlay {
     z-index: 1 !important;
 }
@@ -511,4 +511,98 @@ a:focus {
     font-size: 0.8rem;
     padding: 0.5rem 0.9rem;
   }
+}
+/* ---------------- MOBILE HERO FIX (FINAL) ---------------- */
+@media (max-width: 576px) {
+
+  /* Fix hero slide layout */
+  .hero-carousel .item {
+    height: 70vh !important;                /* smaller height */
+    background-size: cover !important;       /* prevent zoom issues */
+    background-position: top center !important;
+    padding-top: 60px !important;            /* avoid navbar overlap */
+  }
+
+  /* Add stronger overlay so text is readable */
+  .hero-carousel .item::before {
+    background: rgba(0,0,0,0.60) !important;
+  }
+
+  /* Fix hero caption spacing */
+  .hero-caption {
+    max-width: 90% !important;
+    padding: 0.5rem !important;
+    text-align: center !important;
+  }
+
+  /* Fix title size */
+  .hero-caption h1,
+  .hero-caption h1.homeTitle,
+  .homeTitle {
+    font-size: 1.4rem !important;
+    line-height: 1.4 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Fix subtitle */
+  .hero-caption p,
+  .hero-caption p.lead {
+    font-size: 0.85rem !important;
+    margin-bottom: 1rem !important;
+  }
+
+  /* Fix button */
+  .hero-caption .butn,
+  .butn {
+    font-size: 0.75rem !important;
+    padding: 8px 14px !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  /* Remove left/right animation for slides on small screens */
+  .slide-1 .hero-caption,
+  .slide-2 .hero-caption,
+  .slide-3 .hero-caption {
+    transform: none !important;
+  }
+}
+html, body {
+  overflow-x: hidden !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+section, header, footer, div {
+  overflow-x: hidden !important;
+}
+.navbar {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
+}
+
+.offcanvas {
+  max-width: 100vw !important;
+}
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff; /* or your loader background */
+  z-index: 999999 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader-wrapper.fade-out {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.navbar {
+  z-index: 999 !important;
 }
