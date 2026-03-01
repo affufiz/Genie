@@ -123,6 +123,77 @@
   transition: color 0.2s ease;
 }
 
+/* ============================= */
+/* 📱 Mobile Devices (≤576px) */
+/* ============================= */
+@media (max-width: 576px) {
+
+  #navbarLogo {
+    margin-left: 6px;
+    margin-top: 4px;
+  }
+
+  #navbarLogo .main-title {
+    font-size: 16px;
+    letter-spacing: 1px;
+    bottom: 0;
+  }
+
+  #navbarLogo .sub-title {
+    font-size: 8px;
+    letter-spacing: 2px;
+    bottom: 3px;
+  }
+
+  #navbarLogo.scrolled .main-title {
+    font-size: 14px;
+  }
+
+  #navbarLogo.scrolled .sub-title {
+    font-size: 7px;
+  }
+}
+
+
+/* ============================= */
+/* 📱 Tablets (≤768px) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  #navbarLogo .main-title {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+
+  #navbarLogo .sub-title {
+    font-size: 10px;
+    letter-spacing: 3px;
+  }
+
+  #navbarLogo.scrolled .main-title {
+    font-size: 16px;
+  }
+
+  #navbarLogo.scrolled .sub-title {
+    font-size: 9px;
+  }
+}
+
+
+/* ============================= */
+/* 💻 Small Laptops (≤992px) */
+/* ============================= */
+@media (max-width: 992px) {
+
+  #navbarLogo .main-title {
+    font-size: 20px;
+  }
+
+  #navbarLogo .sub-title {
+    font-size: 11px;
+  }
+}
+
 /* ===== Nav Item Spacing ===== */
 .navbar .navbar-nav .nav-item {
   margin-right: 20px;
