@@ -334,3 +334,24 @@ async function loadPage(file) {
     console.error(err);
   }
 }
+
+// Make all service cards clickable
+document.addEventListener("DOMContentLoaded", function () {
+  const phoneNumber = "tel:+917996700207";
+
+  const serviceCards = document.querySelectorAll(".service-card-ac");
+
+  serviceCards.forEach((card) => {
+    card.style.cursor = "pointer"; // show hand cursor
+
+    card.addEventListener("click", function () {
+      window.location.href = phoneNumber;
+    });
+  });
+});
+card.addEventListener("click", function () {
+  card.style.transform = "scale(0.98)";
+  setTimeout(() => {
+    window.location.href = phoneNumber;
+  }, 150);
+});

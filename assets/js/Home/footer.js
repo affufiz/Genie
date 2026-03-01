@@ -25,12 +25,7 @@ function loadFooter() {
               We specialize exclusively in professional TV repair services. From screen issues to power failures, we deliver fast, reliable, and affordable solutions for all major TV brands.
             </p>
 
-            <ul class="list-inline footer-contact-icons mt-3">
-              <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
-              <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-            </ul>
+           
           </div>
 
           <!-- 2️⃣ Services -->
@@ -47,21 +42,16 @@ function loadFooter() {
           <!-- 3️⃣ Contact Info -->
           <div class="col-lg-3 col-md-6 mb-3">
             <h5 class="primaryfooterColor mb-4">Contact Us</h5>
-            <div class="footer-contact-info mb-3">
-              <address class="mb-2">105 Edington Drive, Roswell, GA 30076</address>
-              <a href="#" class="primaryfooterColor text-decoration-none">
-                <i class="fas fa-angle-right me-2"></i> Get Direction
-              </a>
-            </div>
+           
             <ul class="list-unstyled mt-4">
               <li class="mb-2">
                 <a href="tel:+1234567890" class="text-white text-decoration-none">
-                  <i class="fas fa-phone me-2 primaryfooterColor"></i> +1 234 567 890
+                  <i class="fas fa-phone me-2 primaryfooterColor"></i> 7996700207
                 </a>
               </li>
               <li>
                 <a href="mailto:email@youraddress.com" class="text-white text-decoration-none">
-                  <i class="fas fa-envelope me-2 primaryfooterColor"></i> email@youraddress.com
+                  <i class="fas fa-envelope me-2 primaryfooterColor"></i> screensupport@mail.com
                 </a>
               </li>
             </ul>
@@ -72,7 +62,7 @@ function loadFooter() {
             <div class="box position-relative p-3 rounded">
               <h2 class="text-white fs-6 mb-0">
                 <span class="d-block small text-white">Get Free Estimate</span>
-                <span style="font-size: 24px">+1 234 567 890</span>
+                <span style="font-size: 24px">7996700207</span>
               </h2>
               <span
                 class="icon position-absolute top-50 end-0 translate-middle-y me-2"
@@ -92,12 +82,7 @@ function loadFooter() {
                 </svg>
               </span>
             </div>
-            <form class="newsletter-form mt-4">
-              <div class="input-group">
-                <input type="email" class="form-control" placeholder="Subscribe with us"/>
-                <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
-              </div>
-            </form>
+           
           </div>
         </div>
       </div>

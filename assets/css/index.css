@@ -708,3 +708,86 @@ body, html {
     text-align: center;
   }
 }
+/* Container */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 9999;
+}
+
+/* Button */
+.whatsapp-float {
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  position: relative;
+  animation: pulse 2s infinite;
+  transition: 0.3s ease;
+}
+
+.whatsapp-float svg {
+  width: 30px;
+  height: 30px;
+}
+
+/* Hover */
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+/* Tooltip */
+.whatsapp-tooltip {
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #222;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.whatsapp-container:hover .whatsapp-tooltip {
+  opacity: 1;
+}
+
+/* Mobile Optimization */
+@media (max-width: 576px) {
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+  }
+
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .whatsapp-tooltip {
+    display: none; /* Hide tooltip on small screens */
+  }
+}
+
